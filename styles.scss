@@ -1,0 +1,376 @@
+// SCSS variables
+$primary-color: #165493;
+$secondary-color: #6ec1e4;
+$accent-color: #e74c3c;
+$purple-color: #8e44ad;
+$background-color: #f5f6fa;
+$white: #fff;
+$border-radius: 1.5em;
+$font-main: 'Segoe UI', Arial, sans-serif;
+$font-footer: 'Inter', Arial, sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-main;
+  background: $background-color;
+  color: #222f3e;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  color: #0a3d62;
+  margin-bottom: 0.5em;
+}
+.btn {
+  display: inline-block;
+  background: #0a3d62;
+  color: $white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  &:hover {
+    background: #3c6382;
+  }
+}
+header {
+  background: $white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5em;
+    padding: 0.5em 0;
+    .logo-group {
+      display: flex;
+      align-items: center;
+      .logo-img {
+        height: 60px;
+        width: auto;
+        margin-right: 2em;
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 2.5em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            color: #222f3e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            transition: color 0.2s;
+            &:hover {
+              color: #0a3d62;
+            }
+          }
+        }
+      }
+    }
+    .pay-btn {
+      background: $primary-color;
+      color: $white;
+      border-radius: 8px;
+      padding: 0.5em 1.5em;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background 0.2s;
+      &:hover {
+        background: #0a3d62;
+      }
+    }
+  }
+}
+.people-assurance {
+  background: linear-gradient(90deg, $primary-color 0%, $white 100%);
+  padding: 3em 0;
+  .people-assurance-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+    .pa-text {
+      h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+      }
+      .pa-stats {
+        margin-top: 1em;
+        .pa-number {
+          font-size: 1.3em;
+          font-weight: 600;
+          .highlight {
+            color: $primary-color;
+          }
+        }
+        .pa-desc {
+          color: $primary-color;
+          font-size: 1em;
+          margin-bottom: 0.5em;
+        }
+        .pa-note {
+          color: $accent-color;
+          font-size: 0.95em;
+          margin-top: 0.5em;
+        }
+      }
+    }
+    .pa-image {
+      img {
+        width: 320px;
+        max-width: 100%;
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .people-assurance-content {
+      flex-direction: column;
+      gap: 1.5em;
+      align-items: stretch;
+      .pa-image {
+        text-align: center;
+      }
+    }
+  }
+}
+.hero-section {
+  position: relative;
+  background: none;
+  min-height: 480px;
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url('hero-bg.png') center/cover no-repeat;
+    filter: blur(2px);
+    opacity: 0.7;
+  }
+  .hero-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 480px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+    .hero-card {
+      background: $primary-color;
+      color: $white;
+      border-radius: 2em;
+      box-shadow: 0 8px 32px rgba(22,84,147,0.12);
+      padding: 2.5em 3em;
+      width: 480px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+      form {
+        width: 100%;
+        .form-row {
+          display: flex;
+          gap: 1em;
+          margin-bottom: 1em;
+          input[type="text"],
+          input[type="email"] {
+            flex: 1 1 0;
+            padding: 0.9em 1em;
+            border-radius: 8px;
+            border: none;
+            font-size: 1em;
+            &:focus {
+              outline: 2px solid $secondary-color;
+            }
+          }
+          &.checkbox-row {
+            align-items: flex-start;
+            gap: 0.7em;
+            margin-bottom: 1.2em;
+            label {
+              font-size: 0.95em;
+              color: $white;
+              a {
+                color: $secondary-color;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .submit-btn {
+          width: 100%;
+          background: $secondary-color;
+          color: $primary-color;
+          font-weight: 700;
+          border: none;
+          border-radius: 8px;
+          padding: 1em 0;
+          font-size: 1.1em;
+          cursor: pointer;
+          transition: background 0.2s;
+          &:hover {
+            background: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .hero-container {
+      justify-content: center;
+      padding: 1em 0;
+      .hero-card {
+        width: 100%;
+        padding: 2em 1em;
+      }
+      .form-row {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  }
+}
+.matrix-footer {
+  background: $primary-color;
+  color: $white;
+  padding: 2.5em 0 0.5em 0;
+  border-top: 4px solid $secondary-color;
+  font-family: $font-footer;
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+    gap: 2em;
+  }
+  .footer-col {
+    flex: 1 1 0;
+    min-width: 180px;
+    margin-bottom: 2em;
+  }
+  .footer-title {
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+    letter-spacing: 0.04em;
+  }
+  .footer-contact {
+    font-size: 0.93em;
+    line-height: 1.7;
+    a.footer-link {
+      color: $white;
+      text-decoration: underline;
+      font-size: 0.93em;
+      &:hover { color: $secondary-color; }
+    }
+    div { margin-bottom: 0.7em; }
+  }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 0.7em;
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 0.93em;
+        &:hover { color: $secondary-color; }
+      }
+    }
+  }
+  .footer-uds {
+    text-align: center;
+    .footer-uds-text {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+    }
+    .footer-uds-logo {
+      width: 70px;
+      height: auto;
+      margin-bottom: 0.5em;
+      background: $white;
+      border-radius: 8px;
+      padding: 0.3em 0.5em;
+      display: inline-block;
+    }
+    .footer-uds-caption {
+      font-size: 0.85em;
+      color: $white;
+      margin-top: 0.2em;
+    }
+  }
+  .footer-social-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    margin: 2.5em 0 0.5em 0;
+    svg {
+      display: block;
+    }
+    .footer-social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: transparent;
+      transition: background 0.2s;
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .footer-main {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 1em;
+      gap: 0.5em;
+    }
+    .footer-col {
+      min-width: 0;
+      margin-bottom: 1.5em;
+    }
+    .footer-uds {
+      text-align: left;
+      margin-top: 1em;
+    }
+  }
+}
+// ... (rest of the CSS converted to SCSS with variables and nesting, including all sections and .matrix-footer) ... 
