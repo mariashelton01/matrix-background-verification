@@ -11,7 +11,10 @@
   <header class="header">
     <div class="header-row">
       <img src="logo.png" alt="Matrix Infotech Logo" class="header-logo" />
-      <nav class="header-nav">
+      <button class="header-hamburger mobile-only" aria-label="Open menu" aria-expanded="false" aria-controls="header-mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-nav desktop-only">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -21,7 +24,18 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <a href="#" class="header-pay-btn">₹ Pay</a>
+      <a href="#" class="header-pay-btn desktop-only">₹ Pay</a>
+      <div class="header-mobile-menu mobile-only" id="header-mobile-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="header-pay-btn header-pay-btn-mobile">₹ Pay</a>
+      </div>
     </div>
   </header>
 
@@ -281,6 +295,19 @@
       <a href="#" class="footer-social-icon" aria-label="YouTube"><svg width="32" height="32" fill="#fff" viewBox="0 0 32 32"><path d="M31.7 8.3c-.4-1.5-1.6-2.7-3.1-3.1-2.7-.7-13.6-.7-13.6-.7s-10.9 0-13.6.7c-1.5.4-2.7 1.6-3.1 3.1-.7 2.7-.7 8.3-.7 8.3s0 5.6.7 8.3c.4 1.5 1.6 2.7 3.1 3.1 2.7.7 13.6.7 13.6.7s10.9 0 13.6-.7c1.5-.4 2.7-1.6 3.1-3.1.7-2.7.7-8.3.7-8.3s0-5.6-.7-8.3zM12.7 21.5v-11l10.2 5.5-10.2 5.5z"/></svg></a>
     </div>
   </footer>
+
+  <script>
+  // Hamburger menu toggle
+  const hamburger = document.querySelector('.header-hamburger');
+  const mobileMenu = document.getElementById('header-mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('open');
+    });
+  }
+  </script>
 
 </body>
 </html> 
