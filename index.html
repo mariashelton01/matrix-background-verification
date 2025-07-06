@@ -297,58 +297,66 @@
   </footer>
 
   <script>
+  console.log('Hamburger script loaded');
   document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.header-hamburger');
     const mobileMenu = document.getElementById('header-mobile-menu');
+    console.log('DOM loaded. Hamburger:', !!hamburger, 'Menu:', !!mobileMenu);
 
     function isMobile() {
+      console.log('Window width:', window.innerWidth);
       return window.innerWidth <= 900;
     }
 
     function closeMenu() {
       hamburger.setAttribute('aria-expanded', 'false');
       mobileMenu.classList.remove('open');
+      console.log('Menu closed');
     }
 
     function openMenu() {
       hamburger.setAttribute('aria-expanded', 'true');
       mobileMenu.classList.add('open');
+      console.log('Menu opened');
     }
 
     if (hamburger && mobileMenu) {
       hamburger.addEventListener('click', function(e) {
         if (!isMobile()) return;
-        e.stopPropagation(); // Prevent outside click from firing
+        e.stopPropagation();
         const expanded = this.getAttribute('aria-expanded') === 'true';
         if (expanded) {
           closeMenu();
         } else {
           openMenu();
         }
+        console.log('Hamburger clicked. Expanded:', !expanded);
       });
 
-      // Close on outside click (but not if clicking hamburger)
       document.addEventListener('click', function(e) {
         if (!isMobile()) return;
         if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
           closeMenu();
+          console.log('Outside click, menu closed');
         }
       });
 
-      // Close on ESC
       document.addEventListener('keydown', function(e) {
         if (!isMobile()) return;
         if (e.key === 'Escape') {
           closeMenu();
+          console.log('ESC pressed, menu closed');
         }
       });
 
-      // Close menu on resize to desktop
       window.addEventListener('resize', function() {
         if (!isMobile()) {
           closeMenu();
+          console.log('Resized to desktop, menu closed');
         }
       });
+    } else {
+      console.log('Hamburger or menu not found in DOM');
     }
   });
   </script>
