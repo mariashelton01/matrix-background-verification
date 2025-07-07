@@ -46,23 +46,6 @@ header, .header {
   letter-spacing: 0.01em;
   transition: color 0.2s;
   padding: 0.2em 0.1em;
-  position: relative;
-  overflow: hidden;
-}
-.header-nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: #165493;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
-}
-.header-nav ul li a:hover::after {
-  transform: scaleX(1);
 }
 .header-nav ul li a:hover {
   color: #165493;
@@ -1446,26 +1429,10 @@ header, .header {
   padding: 0.5em 1.5em;
   width: 100%;
   display: block;
-  position: relative;
-  overflow: hidden;
-}
-.header-mobile-menu ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: #165493;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
-}
-.header-mobile-menu ul li a:hover::after {
-  transform: scaleX(1);
 }
 .header-mobile-menu ul li a:hover {
   color: #165493;
+  background: #f5f6fa;
 }
 .header-pay-btn-mobile {
   display: block;
@@ -1483,101 +1450,5 @@ header, .header {
 }
 .header-pay-btn-mobile:hover {
   background: #0a3d62;
-}
-
-/* --- Professional Polish --- */
-
-/* Section spacing */
-section {
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  margin-bottom: 0;
-}
-
-/* Headings */
-h1, h2, h3, .assurance-title, .industries-support-title, .special-checks-title {
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-  margin-bottom: 1em;
-}
-
-/* Card styles */
-.assurance-card, .scorecard-card, .contact-card, .industry-box, .special-check {
-  box-shadow: 0 4px 24px rgba(22, 84, 147, 0.08);
-  border-radius: 18px;
-  background: #fff;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-.assurance-card:hover, .scorecard-card:hover, .contact-card:hover, .industry-box:hover, .special-check:hover {
-  box-shadow: 0 8px 32px rgba(22, 84, 147, 0.16);
-  transform: translateY(-2px) scale(1.01);
-}
-
-/* Button styles */
-.header-pay-btn, .consult-btn, .header-pay-btn-mobile, .contact-form button[type="submit"] {
-  border-radius: 8px;
-  background: linear-gradient(90deg, #165493 60%, #4ca0e0 100%);
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  box-shadow: 0 2px 8px rgba(22, 84, 147, 0.10);
-  border: none;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-}
-.header-pay-btn:hover, .consult-btn:hover, .header-pay-btn-mobile:hover, .contact-form button[type="submit"]:hover {
-  background: linear-gradient(90deg, #0a3d62 60%, #165493 100%);
-  box-shadow: 0 4px 16px rgba(22, 84, 147, 0.18);
-  transform: translateY(-1px) scale(1.02);
-}
-
-/* Footer polish */
-.matrix-footer {
-  background: #165493;
-  color: #fff;
-  border-top: 4px solid #4ca0e0;
-  box-shadow: 0 -2px 12px rgba(22, 84, 147, 0.08);
-}
-.footer-title {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-.footer-link, .footer-list a {
-  color: #4ca0e0;
-  text-decoration: underline;
-  transition: color 0.2s;
-}
-.footer-link:hover, .footer-list a:hover {
-  color: #fff;
-}
-
-/* General improvements */
-input, textarea, select {
-  border-radius: 6px;
-  border: 1px solid #b3d6f5;
-  padding: 0.6em 1em;
-  font-size: 1em;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-input:focus, textarea:focus, select:focus {
-  border: 1.5px solid #165493;
-  box-shadow: 0 0 0 2px #4ca0e033;
-  outline: none;
-}
-
-/* Responsive tweaks for mobile polish */
-@media (max-width: 600px) {
-  section {
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
-  }
-  .assurance-card, .scorecard-card, .contact-card, .industry-box, .special-check {
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(22, 84, 147, 0.10);
-  }
-  .footer-title {
-    font-size: 1em;
-  }
 }
  
