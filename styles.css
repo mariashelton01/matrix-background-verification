@@ -2,7 +2,12 @@
 
 /* Reset and base styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6fa; color: #222f3e; line-height: 1.6; }
+body { font-family: 'Roboto Condensed', Arial, sans-serif; background: #f5f6fa; color: #222f3e; line-height: 1.6; }
+
+/* Replace all other font-family rules */
+header, .header, .header-nav ul li a, .header-pay-btn, .contact-form input[type="text"], .contact-form input[type="email"], .contact-form .contact-captcha, .contact-form .contact-checkbox label, .contact-form button[type="submit"], .consult-link, .consult-btn, .why-partner-content, .assurance-title, .assurance-card, .assurance-card h3, .assurance-card p, .industry-box, .special-check, .scorecard-card, .scorecard-card h2, .scorecard-label, .scorecard-value, .footer-main, .footer-title, .footer-contact, .footer-link, .footer-list a, .footer-uds, .footer-uds-text, .footer-uds-caption, .footer-social-row, .footer-social-icon {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+}
 
 /* Header */
 header, .header {
