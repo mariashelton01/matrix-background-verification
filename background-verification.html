@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Infotech</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-row">
+      <img src="logo.png" alt="Matrix Infotech Logo" class="header-logo" />
+      <button class="header-hamburger mobile-only" aria-label="Open menu" aria-expanded="false" aria-controls="header-mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-nav desktop-only">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header-pay-btn desktop-only">₹ Pay</a>
+      <div class="header-mobile-menu mobile-only" id="header-mobile-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="header-pay-btn header-pay-btn-mobile">₹ Pay</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- People Assurance Section (after header) -->
+  <section class="people-assurance" style="text-align:center; padding: 2.5em 0 2em 0;">
+    <img src="Component 1.png" alt="People Assurance" style="max-width: 1100px; width: 100%; display: inline-block; margin: 0 auto; border-radius: 6px; box-shadow: none;" />
+  </section>
+
+  <!-- Hero / Contact Card Section -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="contact-card">
+        <h2>Get In touch with us</h2>
+        <form class="contact-form">
+          <div class="contact-form-row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="mobile" placeholder="Mobile" required>
+          </div>
+          <div class="contact-form-row">
+            <input type="email" name="email" placeholder="Email ID" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="contact-captcha-row">
+            <input type="text" class="contact-captcha" name="captcha" placeholder="Captcha" required>
+            <div style="flex:1 1 0;"></div>
+          </div>
+          <div class="contact-checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I've read and accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>*</label>
+          </div>
+          <div class="contact-submit">
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Section: Background Verification (after Get In touch with us card) -->
+  <section class="bv-main-section" style="background:#fff; padding: 3em 0 2em 0; display:flex; align-items:center; justify-content:center; gap:2em; position:relative;">
+    <div style="flex:1; max-width:700px; margin:0 2em;">
+      <h2 style="text-align:center; font-size:1.5em; font-weight:700; margin-bottom:1.2em;">
+        Most Trusted <span style="background: linear-gradient(90deg, #1766b0 0%, #a259c6 60%, #b02a2a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight:700;">Background Verification</span> Company in India
+      </h2>
+      <div style="font-family:'Roboto Condensed', Arial, sans-serif; color:#233; font-size:1.08em; line-height:1.6; text-align:justify;">
+        <p style="margin-bottom:1.2em;">
+          People define an organization. Their integrity determines the reputation of your business in the market. With so many reports of resume fudging and misrepresentation, it is important to ensure that one is hired after proper verification. A poor hiring decision impacts business and has consequences like theft of intellectual property, leakage of confidential information, misuse of resources or questionable conduct.
+        </p>
+        <p style="margin-bottom:1.2em;">
+          All the aforementioned factors underscore the imperative need for comprehensive Employee Background Verification services to mitigate these risks and ensure the integrity of data and intellectual property across all touchpoints of a business's value chain.
+        </p>
+        <p>
+          We at Matrix Business Services are pioneers in this ecosystem. Leveraging two decades of industry experience, deep expertise, and cutting-edge technology, we enable end to-end and seamless background verification services. We work with customers across multiple business landscapes including Information Technology, Business Process Outsourcing, Manufacturing, BFSI and Retail.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partner Section -->
+  <section class="why-partner-section">
+    <div class="why-partner-img">
+      <img src="why-partner-left.png" alt="Why Partner Visual" />
+    </div>
+    <div class="why-partner-content">
+      <h2>Why Partner with <span class="matrix-blue">Matrix?</span></h2>
+      <p>
+        At Matrix Business Services, we combine deep industry expertise with advanced technology to deliver assurance services that are accurate, timely, and actionable. Here's why leading businesses trust us:
+      </p>
+      <ul>
+        <li>20+ Years of Industry Leadership in verification and assurance</li>
+        <li>Pan-India Network ensuring consistent service across geographies</li>
+        <li>Robust Technology Platforms delivering secure and transparent reporting</li>
+        <li>Experienced Professionals trained to handle diverse industry needs</li>
+        <li>Client-Centric Approach focused on creating measurable value</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Standard Checks Section (restore to previous place) -->
+  <section class="standard-checks-section">
+    <div class="standard-checks-header">
+      <div class="standard-checks-line"></div>
+      <h2 class="standard-checks-title">Standard <span class="text-purple">Checks</span></h2>
+      <div class="standard-checks-line"></div>
+    </div>
+    <div class="standard-checks-list">
+      <div class="standard-check">
+        <img src="icon-id.png" alt="Identity Check" class="standard-check-icon" />
+        <div>
+          <h3>Identity<br>Check</h3>
+          <p>Verify government-issued ID and personal details</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-address.png" alt="Address Check" class="standard-check-icon" />
+        <div>
+          <h3>Address<br>Check</h3>
+          <p>Confirm current and previous addresses</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-academic.png" alt="Education Check" class="standard-check-icon" />
+        <div>
+          <h3>Education<br>Check</h3>
+          <p>Validate academic qualifications</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-employment.png" alt="Employment Check" class="standard-check-icon" />
+        <div>
+          <h3>Employment<br>Check</h3>
+          <p>Verify employment history and references</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-criminal.png" alt="Criminal Check" class="standard-check-icon" />
+        <div>
+          <h3>Criminal<br>Check</h3>
+          <p>Check for criminal records</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-database.png" alt="Database Check" class="standard-check-icon" />
+        <div>
+          <h3>Database<br>Check</h3>
+          <p>Screen against public and proprietary databases</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-drug.png" alt="Drug Test" class="standard-check-icon" />
+        <div>
+          <h3>Drug<br>Test</h3>
+          <p>Check if the candidate is subject to drug abuse. Involves various levels of tests</p>
+        </div>
+      </div>
+      <div class="standard-check">
+        <img src="icon-character.png" alt="Character Reference Check" class="standard-check-icon" />
+        <div>
+          <h3>Character Reference<br>Check</h3>
+          <p>Conducted through the reporting authority of the individual during their previous employment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Checks Section -->
+  <section class="special-checks-section">
+    <div class="special-checks-header">
+      <div class="special-checks-line"></div>
+      <h2 class="special-checks-title">Special <span class="text-purple">Checks</span></h2>
+      <div class="special-checks-line"></div>
+    </div>
+    <div class="special-checks-list">
+      <div class="special-check">
+        <img src="check1.png" alt="Social Media Check" class="special-check-icon" />
+        <div>
+          <h3>Social Media<br>Check</h3>
+          <p>Check if the individual has created negative publicity for his/her ex-employer on social media</p>
+        </div>
+      </div>
+      <div class="special-check">
+        <img src="check2.png" alt="Credit Check" class="special-check-icon" />
+        <div>
+          <h3>Credit<br>Check</h3>
+          <p>Evaluate the credit discipline of the individual</p>
+        </div>
+      </div>
+      <div class="special-check">
+        <img src="check3.png" alt="Gap Verification" class="special-check-icon" />
+        <div>
+          <h3>Gap<br>Verification</h3>
+          <p>Gaps in a candidate's employment history is verified to cross-check the cause for the gaps</p>
+        </div>
+      </div>
+    </div>
+    <div class="scorecard-section">
+      <div class="scorecard-card">
+        <h2>Matrix Background Verification <span class="scorecard-blue">Scorecard</span></h2>
+        <div class="scorecard-stats">
+          <div class="scorecard-stat">
+            <img src="score1.png" alt="Companies" class="scorecard-icon" />
+            <div class="scorecard-label">Number of Companies</div>
+            <div class="scorecard-value">700+</div>
+          </div>
+          <div class="scorecard-stat">
+            <img src="score2.png" alt="Profiles Verified" class="scorecard-icon" />
+            <div class="scorecard-label">Number of profiles verified monthly</div>
+            <div class="scorecard-value">48000</div>
+          </div>
+          <div class="scorecard-stat">
+            <img src="score3.png" alt="Frauds Detected" class="scorecard-icon" />
+            <div class="scorecard-label">Number of frauds & misinterpretations detected</div>
+            <div class="scorecard-value">9848</div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section: Employee Background Verification -->
+  <section class="faq-section" style="background:#fff; padding:2.2em 0 1.5em 0;">
+    <div class="faq-header" style="display:flex;align-items:center;justify-content:center;gap:1.2em;margin-bottom:1.5em;">
+      <div class="faq-line" style="flex:1;height:2px;background:#222f3e;opacity:0.18;max-width:120px;"></div>
+      <h2 class="faq-title" style="font-size:1.2em;font-weight:700;margin:0;text-align:center;letter-spacing:0.01em;">People also <span style='color:#b02a2a;'>ask</span></h2>
+      <div class="faq-line" style="flex:1;height:2px;background:#222f3e;opacity:0.18;max-width:120px;"></div>
+    </div>
+    <div class="faq-list" style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:1.2em;">
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">What is an employee background verification for employees?</div>
+        <div class="faq-a" style="color:#222f3e;">Background verification for employees is a process to verify a candidate's history: criminal records, educational qualifications, employment history, credit history, and more to confirm the integrity of data submitted and to verify other credentials.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">How long does it take to complete a background verification?</div>
+        <div class="faq-a" style="color:#222f3e;">While an online verification process that involves basic KYC parameters - court history, database, and ID verification—can be done instantaneously, a detailed employee background check takes at least 15 working days.<br><br>Online verification will be done instantaneously (KYC checks like Court, Database, and ID).<br>A comprehensive background verification will take 15 working days.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">How much does an employee background check cost?</div>
+        <div class="faq-a" style="color:#222f3e;">The cost depends upon the parameters and history of every candidate. The costs are very nominal considering we have the best offers. The pricing also depends upon the volume and length of the contract. For inquiries, we can be reached out and we shall share the information based on the inputs we get.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">What is disqualifying on an employee's background verification?</div>
+        <div class="faq-a" style="color:#222f3e;">
+          <ol style="margin:0 0 0 1.2em;">
+            <li>Discrepancy in Education/Employment history</li>
+            <li>Wrong information provided in their resume or inconsistencies</li>
+            <li>Criminal history</li>
+            <li>Adverse reference from previous employers</li>
+            <li>Poor credit history</li>
+            <li>Failed drug test</li>
+            <li>Poor driving records in some cases</li>
+          </ol>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">What are the benefits of employee background verification?</div>
+        <div class="faq-a" style="color:#222f3e;">
+          <ol style="margin:0 0 0 1.2em;">
+            <li>Enhance recruitment quality</li>
+            <li>Minimise hiring risks</li>
+            <li>Enhances regulatory compliance</li>
+            <li>Improves workplace safety</li>
+          </ol>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" style="font-weight:700;color:#1766b0;">How do background verification companies conduct employee background verification?</div>
+        <div class="faq-a" style="color:#222f3e;">
+          <ul style="margin:0 0 0 1.2em;">
+            <li>Companies outsource background verification processes to NASSCOM empanelled background screeners such as Matrix Business Services.</li>
+            <li>Background verification companies will authenticate the credentials of the candidate with the source data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Flow Section (below scorecard) -->
+  <section class="process-flow-section" style="text-align:center; padding: 2.5em 0 2em 0;">
+    <div class="process-flow-header" style="display:flex;align-items:center;justify-content:center;gap:1.2em;margin-bottom:1.2em;">
+      <div class="process-flow-line" style="flex:1 1 0;height:2px;background:#222f3e;opacity:0.18;max-width:180px;"></div>
+      <h2 class="process-flow-title" style="font-size:1.5em; font-weight:700; color:#111; margin:0 1em;">Process <span class="text-purple">Flow</span></h2>
+      <div class="process-flow-line" style="flex:1 1 0;height:2px;background:#222f3e;opacity:0.18;max-width:180px;"></div>
+    </div>
+    <img src="process-flow.png" alt="Process Flow Diagram" style="max-width: 800px; width: 100%; display: inline-block; margin: 0 auto;" />
+    <div class="process-flow-caption" style="margin-top:1.2em; color:#222f3e; font-size:1em;">(A Workflow diagram of how background checks happen in Matrix)</div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="matrix-footer">
+    <div class="footer-main">
+      <div class="footer-col footer-contact">
+        <div class="footer-title">Enquiries</div>
+        <div>090431 76700<br><span style="font-size:0.95em;">(for BGC)</span></div>
+        <div>098417 13333<br><span style="font-size:0.95em;">(for A & A)</span></div>
+        <div><a href="mailto:info@matrixindia.com" class="footer-link">info@matrixindia.com</a></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Services</div>
+        <ul class="footer-list">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Insights</div>
+        <ul class="footer-list">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">News and Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-uds">
+        <div class="footer-uds-text">A UDS<br>ENTERPRISE</div>
+        <img src="logo.png" alt="UDS Logo" class="footer-uds-logo" style="width:70px;" />
+        <div class="footer-uds-caption">Redefining Business Services</div>
+      </div>
+    </div>
+    <div class="footer-social-row">
+      <a href="#" class="footer-social-icon" aria-label="Facebook"><svg width="32" height="32" fill="#fff" viewBox="0 0 32 32"><path d="M29 0h-26c-1.7 0-3 1.3-3 3v26c0 1.7 1.3 3 3 3h13v-12h-4v-5h4v-4c0-4.1 2.5-6.3 6.1-6.3 1.8 0 3.6.3 3.6.3v4h-2c-2 0-2.6 1.2-2.6 2.5v3h5l-1 5h-4v12h7c1.7 0 3-1.3 3-3v-26c0-1.7-1.3-3-3-3z"/></svg></a>
+      <a href="#" class="footer-social-icon" aria-label="LinkedIn"><svg width="32" height="32" fill="#fff" viewBox="0 0 32 32"><path d="M29 0h-26c-1.7 0-3 1.3-3 3v26c0 1.7 1.3 3 3 3h26c1.7 0 3-1.3 3-3v-26c0-1.7-1.3-3-3-3zM12 27h-5v-13h5v13zM9.5 12c-1.6 0-2.5-1.1-2.5-2.4 0-1.4 1-2.4 2.6-2.4s2.5 1.1 2.5 2.4c0 1.3-1 2.4-2.6 2.4zM27 27h-5v-7c0-1.7-.6-2.8-2.1-2.8-1.1 0-1.7.7-2 1.4-.1.2-.1.5-.1.8v7.6h-5s.1-12.3 0-13h5v1.8c.7-1.1 2-2.7 4.8-2.7 3.5 0 6.1 2.3 6.1 7.2v6.7z"/></svg></a>
+      <a href="#" class="footer-social-icon" aria-label="YouTube"><svg width="32" height="32" fill="#fff" viewBox="0 0 32 32"><path d="M31.7 8.3c-.4-1.5-1.6-2.7-3.1-3.1-2.7-.7-13.6-.7-13.6-.7s-10.9 0-13.6.7c-1.5.4-2.7 1.6-3.1 3.1-.7 2.7-.7 8.3-.7 8.3s0 5.6.7 8.3c.4 1.5 1.6 2.7 3.1 3.1 2.7.7 13.6.7 13.6.7s10.9 0 13.6-.7c1.5-.4 2.7-1.6 3.1-3.1.7-2.7.7-8.3.7-8.3s0-5.6-.7-8.3zM12.7 21.5v-11l10.2 5.5-10.2 5.5z"/></svg></a>
+    </div>
+  </footer>
+
+  <script>
+  console.log('Hamburger script loaded');
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.header-hamburger');
+    const mobileMenu = document.getElementById('header-mobile-menu');
+    console.log('DOM loaded. Hamburger:', !!hamburger, 'Menu:', !!mobileMenu);
+
+    function isMobile() {
+      console.log('Window width:', window.innerWidth);
+      return window.innerWidth <= 900;
+    }
+
+    function closeMenu() {
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.remove('open');
+      console.log('Menu closed');
+    }
+
+    function openMenu() {
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileMenu.classList.add('open');
+      console.log('Menu opened');
+    }
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', function(e) {
+        if (!isMobile()) return;
+        e.stopPropagation();
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+        console.log('Hamburger clicked. Expanded:', !expanded);
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!isMobile()) return;
+        if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
+          closeMenu();
+          console.log('Outside click, menu closed');
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (!isMobile()) return;
+        if (e.key === 'Escape') {
+          closeMenu();
+          console.log('ESC pressed, menu closed');
+        }
+      });
+
+      window.addEventListener('resize', function() {
+        if (!isMobile()) {
+          closeMenu();
+          console.log('Resized to desktop, menu closed');
+        }
+      });
+    } else {
+      console.log('Hamburger or menu not found in DOM');
+    }
+  });
+  </script>
+
+</body>
+</html> 
